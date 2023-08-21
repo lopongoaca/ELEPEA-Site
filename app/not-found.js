@@ -1,6 +1,6 @@
-import Image from 'next/image'
+import { WhatsAppIcon } from "./Icons"
 
-export default function notFound() {
+export default function NotFound() {
     return (
         <>
             <div className='content'>
@@ -15,7 +15,8 @@ export default function notFound() {
                     </h1>
                 </div>
             </div>
-            <div className='fixed bottom-0 text-center w-full pb-2 text-sm'>
+            <div className='flex flex-col items-center gap-1 fixed bottom-0 text-center w-full pb-6 text-sm'>
+                <a href="https://wa.me/+573218524486" target="_blank" className="flex gap-2">(+57) 321-852-44-86 <WhatsAppIcon /></a>
                 <a href="mailto:contacto@elepea.com">contacto@elepea.com</a>
             </div>
         </>
