@@ -1,0 +1,28 @@
+---
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;900&display=swap");
+
+	body {
+		background: #000000;
+		color: #fff;
+		font-family: "Source Code Pro", monospace;
+	}
+</style>
