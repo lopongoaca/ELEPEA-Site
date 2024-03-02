@@ -1,0 +1,93 @@
+---
+const clients = [
+    {
+        name: "Bagels",
+        logo: "bagels.png",
+    },
+    {
+        name: "Creactivo",
+        logo: "creattivo.svg",
+    },
+    {
+        name: "Dalias",
+        logo: "dalias.webp",
+    },
+    {
+        name: "Ekho",
+        logo: "ekho.jpg",
+    },
+    {
+        name: "Enerlat",
+        logo: "enerlat.webp",
+    },
+    {
+        name: "Ethics",
+        logo: "ethics.webp",
+    },
+    {
+        name: "Fruty Green",
+        logo: "fruty-green.png",
+    },
+    {
+        name: "Green Plus",
+        logo: "green_plus.png",
+    },
+    {
+        name: "Monthgomery Fair",
+        logo: "mcagfair.png",
+    },
+    {
+        name: "Linkvest",
+        logo: "linkvest.png",
+    },
+    {
+        name: "Panacambios",
+        logo: "panacambios.svg",
+    },
+    {
+        name: "Solutec",
+        logo: "solutec.png",
+    },
+];
+---
+
+<div class="embla w-full mt-20">
+    <div class="embla__container">
+        {
+            clients.map((client) => (
+                <div class="embla__slide justify-center items-center flex text-center">
+                    <img src=`/clients/${client.logo}` alt=`${client.name}`  class="max-w-40" />
+                </div>
+            ))
+        }
+    </div>
+</div>
+
+<script>
+    import EmblaCarousel from "embla-carousel";
+    import AutoScroll from "embla-carousel-auto-scroll";
+
+    const emblaNode = document.querySelector(".embla");
+    const options = { loop: true };
+    const plugins = [
+        AutoScroll({
+            speed: 1,
+        }),
+    ];
+
+    const emblaApi = EmblaCarousel(emblaNode as HTMLElement, options, plugins);
+</script>
+
+<style>
+    .embla {
+        overflow: hidden;
+    }
+    .embla__container {
+        display: flex;
+    }
+    .embla__slide {
+        flex: 0 0 15rem;
+        min-width: 0;
+        color: #fff;
+    }
+</style>
