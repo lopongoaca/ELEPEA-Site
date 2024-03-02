@@ -1,0 +1,48 @@
+<div id="logo" class="mt-8">
+    <h1
+        class="animate-text-enter select-none tracking-tightest font-extrabold text-left text-8xl md:text-10xl"
+    >
+        <span
+            data-content="ELE"
+            class="animate-text-line-height before:opacity-0 bg before:animate-gradient-background-1"
+        >
+            <span
+                class="text from-gradient-1-start to-gradient-1-end animate-gradient-foreground-1"
+                >ELE</span
+            >
+        </span>
+        <span
+            data-content="PE"
+            class="animate-text-line-height before:opacity-0 bg before:animate-gradient-background-2"
+        >
+            <span
+                class="text from-gradient-2-start to-gradient-2-end animate-gradient-foreground-2"
+                >PE</span
+            >
+        </span>
+        <span
+            data-content="A"
+            data-dash="_"
+            class="animate-text-line-height before:opacity-0 bg before:animate-gradient-background-3"
+        >
+            <span
+                class="text from-gradient-3-start to-gradient-3-end animate-gradient-foreground-3"
+                >A</span
+            >
+            <span
+                class="animate-blink-dash absolute bottom-4 text-[7rem] text-neutral-700"
+                >_</span
+            >
+        </span>
+    </h1>
+</div>
+
+<style>
+    span.bg {
+        @apply relative block  before:content-[attr(data-content)]  before:w-full before:z-0 before:block before:absolute before:top-0 before:bottom-0 before:left-0 before:text-white before:px-2;
+        line-height: 0.7;
+    }
+    span.text {
+        @apply px-2 text-transparent bg-clip-text bg-gradient-to-r;
+    }
+</style>

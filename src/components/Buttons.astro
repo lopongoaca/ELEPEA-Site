@@ -1,0 +1,45 @@
+---
+interface Props {
+    title: string;
+    color: string;
+    services: string[];
+    orientation: string;
+}
+
+const { title, color, services, orientation } = Astro.props;
+---
+
+<div class="flex flex-col md:flex-row relative gap-7 items-center">
+    <button
+        class="min-h-40 relative md:min-h-max border border-gray-700 rounded-lg shadow w-full flex items-center justify-center px-16 py-8 text-center text-4xl font-bold text-gray-100 overflow-hidden transition duration-500 z-10"
+    >
+        <span
+            class=`absolute ${color} h-1 bottom-0 w-full rounded-br-lg rounded-bl-lg`
+        ></span>
+
+        {title}
+    </button>
+    <ul
+        class=`${orientation} text-white list-disc absolute opacity-0 transition duration-500 z-0`
+    >
+        {services.map((service) => <li>{service}</li>)}
+    </ul>
+</div>
+
+<style>
+    span,
+    button {
+        font-family: "safiromedium", sans-serif;
+    }
+    button span:first-child {
+        transform: translateX(-101%);
+        transition: transform 0.2s ease-in;
+    }
+    button:hover span {
+        transform: translateX(0);
+    }
+    li {
+        font-family: "safiromedium", sans-serif;
+        font-weight: lighter;
+    }
+</style>
