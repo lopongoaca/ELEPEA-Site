@@ -10,14 +10,13 @@ export const webServicies = [
 ];
 
 export const brandingServicies = [
-	"Logo Design",
-	"Brand Identity",
-	"Brand Strategy",
-	"Brand Guidelines",
-	"Brand Consultancy",
-	"Brand Development",
-	"Brand Management",
-	"Brand Marketing",
+"Corporate Identity",
+"Brand Diagnosis",
+"Brand Workshops",
+"Brand Design",
+"Product Design",
+"Functional Strategies",
+"Production"
 ];
 
 export const clients = [
