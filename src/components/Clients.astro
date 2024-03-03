@@ -1,57 +1,8 @@
 ---
-const clients = [
-    {
-        name: "Bagels",
-        logo: "bagels.png",
-    },
-    {
-        name: "Creactivo",
-        logo: "creattivo.svg",
-    },
-    {
-        name: "Dalias",
-        logo: "dalias.webp",
-    },
-    {
-        name: "Ekho",
-        logo: "ekho.jpg",
-    },
-    {
-        name: "Enerlat",
-        logo: "enerlat.webp",
-    },
-    {
-        name: "Ethics",
-        logo: "ethics.webp",
-    },
-    {
-        name: "Fruty Green",
-        logo: "fruty-green.png",
-    },
-    {
-        name: "Green Plus",
-        logo: "green_plus.png",
-    },
-    {
-        name: "Monthgomery Fair",
-        logo: "mcagfair.png",
-    },
-    {
-        name: "Linkvest",
-        logo: "linkvest.png",
-    },
-    {
-        name: "Panacambios",
-        logo: "panacambios.svg",
-    },
-    {
-        name: "Solutec",
-        logo: "solutec.png",
-    },
-];
+import {clients} from '../data/data'
 ---
 
-<div class="embla w-full mt-20">
+<div class="embla w-full mt-32">
     <div class="embla__container">
         {
             clients.map((client) => (
@@ -72,6 +23,9 @@ const clients = [
     const plugins = [
         AutoScroll({
             speed: 1,
+            startDelay:0,
+            stopOnInteraction:false,
+            stopOnFocusIn:false
         }),
     ];
 
@@ -86,8 +40,9 @@ const clients = [
         display: flex;
     }
     .embla__slide {
-        flex: 0 0 15rem;
+        flex: 0 0 12rem;
         min-width: 0;
         color: #fff;
+        opacity: 0.8;
     }
 </style>
