@@ -19,14 +19,22 @@ export const brandingServicies = [
 "Production"
 ];
 
-export const clients = [
+export const clients = [    
     {
-        name: "Bagels",
-        logo: "bagels.png",
+        name: "Green Plus",
+        logo: "green-plus.png",
+    },
+    {
+        name: "Panacambios",
+        logo: "panacambios.png",
     },
     {
         name:"Lv Lending",
         logo:"lv-lending.png",
+    },
+    {
+        name: "Bagels",
+        logo: "bagels.png",
     },
     {
         name: "Creactivo",
@@ -56,14 +64,10 @@ export const clients = [
         name:"VML Abogados",
         logo: "vml.png",
     },
-    {
-        name: "Fruty Green",
-        logo: "fruty-green.png",
-    },
-    {
-        name: "Green Plus",
-        logo: "green-plus.png",
-    },
+   {
+        name: "Solutec",
+        logo: "solutec.png",
+    },    
     {
         name: "Monthgomery Fair",
         logo: "mcagfair.png",
@@ -71,13 +75,9 @@ export const clients = [
     {
         name: "Linkvest",
         logo: "linkvest.png",
-    },
-    {
-        name: "Panacambios",
-        logo: "panacambios.png",
-    },
-    {
-        name: "Solutec",
-        logo: "solutec.png",
-    },
+    },            
+     {
+        name: "Fruty Green",
+        logo: "fruty-green.png",
+    },    
 ];
