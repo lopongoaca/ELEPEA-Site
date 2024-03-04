@@ -75,9 +75,9 @@ export const clients = [
     {
         name: "Linkvest",
         logo: "linkvest.png",
-    },            
+    }/* ,            
      {
         name: "Fruty Green",
         logo: "fruty-green.png",
-    },    
+    }, */    
 ];
