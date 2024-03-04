@@ -49,6 +49,7 @@ const description = "Development & Branding Studio | Colombia & USA.";
 
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<SpeedInsights />
 	</head>
 	<body>
 		<div
@@ -56,25 +57,23 @@ const description = "Development & Branding Studio | Colombia & USA.";
 		>
 		</div>
 		<slot />
-	</body>
+	</body><style>
+		@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;900&display=swap");
+		body {
+			font-family: "Source Code Pro", monospace;
+		}
+
+		@font-face {
+			font-family: "safiromedium";
+			src: url("/fonts/safiro-medium-webfont.eot");
+			src:
+				url("/fonts/safiro-medium-webfont.eot?#iefix")
+					format("embedded-opentype"),
+				url("/fonts/safiro-medium-webfont.woff2") format("woff2"),
+				url("/fonts/safiro-medium-webfont.woff") format("woff"),
+				url("/fonts/safiro-medium-webfont.ttf") format("truetype");
+			font-weight: normal;
+			font-style: normal;
+		}
+	</style>
 </html>
-
-<style>
-	@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;900&display=swap");
-	body {
-		font-family: "Source Code Pro", monospace;
-	}
-
-	@font-face {
-		font-family: "safiromedium";
-		src: url("/fonts/safiro-medium-webfont.eot");
-		src:
-			url("/fonts/safiro-medium-webfont.eot?#iefix")
-				format("embedded-opentype"),
-			url("/fonts/safiro-medium-webfont.woff2") format("woff2"),
-			url("/fonts/safiro-medium-webfont.woff") format("woff"),
-			url("/fonts/safiro-medium-webfont.ttf") format("truetype");
-		font-weight: normal;
-		font-style: normal;
-	}
-</style>
