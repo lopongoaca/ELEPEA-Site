@@ -13,6 +13,7 @@
     "@astrojs/tailwind": "^4.0.0",
     "@astrojs/vercel": "^4.0.5",
     "@midudev/tailwind-animations": "^0.0.7",
+    "@vercel/speed-insights": "^1.0.10",
     "astro": "^3.0.12",
     "embla-carousel": "^8.0.0",
     "embla-carousel-auto-scroll": "^8.0.0",
