@@ -83,6 +83,9 @@ export const clients = [
     {
         name:"Geosafe",
         logo:"geosafe.png",
+    },{
+        name:"Mas que 1000 palabras",
+        logo:"1000palabras.png",
     }
     /* ,            
      {
