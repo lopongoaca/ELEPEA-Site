@@ -1,11 +1,12 @@
 ---
 import {clients} from '../data/data'
+const clientsRandom = clients.sort(() => Math.random() - 0.5)
 ---
 
 <div class="embla w-full mt-32">
     <div class="embla__container">
         {
-            clients.map((client) => (
+            clientsRandom.map((client) => (
                 <div class="embla__slide justify-center items-center flex text-center">
                     <img src=`/clients/${client.logo}` alt=`${client.name}`  class="max-w-40" />
                 </div>
